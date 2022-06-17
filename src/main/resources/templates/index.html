@@ -2,10 +2,10 @@
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bem vindos ao Planning Poker</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bem vindos ao EstimaTI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 <nav class="navbar navbar-dark bg-danger">
@@ -15,28 +15,58 @@
         </svg>
         EstimaTI
     </a>
-    <span class="navbar-text">
+    <a class="navbar-text" href="/planningpoker/login">
       Login
-    </span>
+    </a>
 </nav>
 <div class="container">
     <div class="jumbotron mt-3">
         <h1 class="display-5">Bem vindos ao EstimaTI!</h1>
         <p class="lead">Sua estimativa online, de forma simples e divertida.</p>
         <hr class="my-4">
-        <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
-        <a class="btn btn-danger btn-lg" href="#" role="button">Cadastre-se</a>
+        <p>O Planning poker, também chamado de Scrum poker, é uma técnica gamificada e baseada em consenso para estimar,
+            usada principalmente para timeboxing nos princípios Agile.
+            O EstimaTI é a forma mais divertida de estimar seus projetos, online e gratis para sempre.
+        </p>
+        <a class="btn btn-danger btn-lg" href="/planningpoker/cadastro" role="button">Cadastre-se</a>
     </div>
-
-    <div class="card mt-3" style="width: 17%;">
-        <img class="card-img-top" src="/static/baralhos/floral/G230.jpg" alt="Imagem de capa do card">
-        <div class="card-body">
-            <a href="#" class="btn btn-danger">Jogar</a>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/roses/G230.jpg" alt="Imagem de capa do card">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/abstract-hexagon-shapes/abstract-hexagon-shapes.png"
+                     alt="Imagem de capa do card">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/pale-green-geometric/pale-green.png" alt="Imagem de capa do card">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/luxury-blue-golden/luxury-blue-golden.png" alt="Imagem de capa do card">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/flat-wireframe/flat-wireframe.png" alt="Imagem de capa do card">
+            </div>
         </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
 </html>
