@@ -1,16 +1,97 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bem vindos ao Planning Poker</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bem vindos ao EstimaTI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-<h1>Bem vindos ao Planning Poker!</h1>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+<nav class="navbar navbar-dark bg-danger">
+    <a class="navbar-brand" href="/planningpoker">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-suit-club-fill" viewBox="0 0 16 16">
+            <path d="M11.5 12.5a3.493 3.493 0 0 1-2.684-1.254 19.92 19.92 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a19.919 19.919 0 0 0 1.582-2.907 3.5 3.5 0 1 1-2.538-5.743 3.5 3.5 0 1 1 6.708 0A3.5 3.5 0 1 1 11.5 12.5z"/>
+        </svg>
+        EstimaTI
+    </a>
+    <a class="navbar-text" href="/planningpoker/login">
+        Login
+    </a>
+</nav>
+<div class="container">
+    <div class="jumbotron mt-3">
+        <h1 class="display-5">Bem vindos ao EstimaTI!</h1>
+        <p class="lead">Sua estimativa online, de forma simples e divertida.</p>
+        <hr class="my-4">
+        <p>O Planning poker, também chamado de Scrum poker, é uma técnica gamificada e baseada em consenso para estimar,
+            usada principalmente para timeboxing nos princípios Agile.
+            O EstimaTI é a forma mais divertida de estimar seus projetos, online e gratis para sempre.
+        </p>
+        <a class="btn btn-danger btn-lg" href="/planningpoker/cadastro" role="button">Cadastre-se</a>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/roses/roses.png" alt="Imagem de capa do card">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/abstract-hexagon-shapes/abstract-hexagon-shapes.png"
+                     alt="Imagem de capa do card">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/pale-green-geometric/pale-green.png" alt="Imagem de capa do card">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/luxury-blue-golden/luxury-blue-golden.png" alt="Imagem de capa do card">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="/baralhos/flat-wireframe/flat-wireframe.png" alt="Imagem de capa do card">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <p>O processo de estimativa, que exige que gerentes de projeto, gerentes de produto e desenvolvedores de software prevejam o grau de esforço necessário
+            para concluir uma tarefa de desenvolvimento, é um obstáculo comum que todos encontram. A estimativa é uma faca de dois gumes: é extremamente útil
+            para dividir projetos de longo prazo em tarefas gerenciáveis e de curto prazo, mas também pode inviabilizar o planejamento de projetos de longo
+            prazo se manuseado incorretamente.</p>
+        <p>As equipes de desenvolvimento de produtos são frequentemente pressionadas pela gerência para aumentar sua precisão de previsão, mas isso é mais fácil
+            dizer do que fazer. Esses grupos não devem apenas descobrir como estimar, mas também quando fazê-lo. O Planning Poker é uma abordagem de estimativa
+            ágil que pode ajudar a simplificar a estimativa.</p>
+    </div>
+</div>
+<div class="container mt-3 text-center">
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="business" value="52RUVLP99DR72"/>
+        <input type="hidden" name="no_recurring" value="0"/>
+        <input type="hidden" name="item_name"
+               value="Caso deseje colaborar com o nosso projeto, aceitamos doações. Cada centavo é valioso para a continuidade do projeto."/>
+        <input type="hidden" name="currency_code" value="BRL"/>
+        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
+               title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal"/>
+        <img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1"/>
+    </form>
+</div>
+<div class="container mt-3">
+    <a href='https://br.freepik.com/'>As artes desta página foram criadas por rawpixel.com - br.freepik.com</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
 </html>
