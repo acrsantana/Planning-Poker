@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bem vindos ao EstimaTI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-danger">
+    <a class="navbar-brand" href="/planningpoker">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-suit-club-fill" viewBox="0 0 16 16">
+            <path d="M11.5 12.5a3.493 3.493 0 0 1-2.684-1.254 19.92 19.92 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a19.919 19.919 0 0 0 1.582-2.907 3.5 3.5 0 1 1-2.538-5.743 3.5 3.5 0 1 1 6.708 0A3.5 3.5 0 1 1 11.5 12.5z"/>
+        </svg>
+        EstimaTI
+    </a>
+    <a class="navbar-text" href="/planningpoker/login">
+        Login
+    </a>
+</nav>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/planningpoker">Home</a></li>
+        <li class="breadcrumb-item"><a href="/planningpoker/cadastro">Cadastro</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sucesso</li>
+    </ol>
+</nav>
+<div class="container">
+    <div th:object="${usuario}">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Usuário cadastrado com sucesso!</h4>
+            <p>Aêêê! Agora você faz parte de um seleto time de gestores preocupados com seus resultados. Organize suas partidas e ajude seu time a estimar cada vez melhor.</p>
+            <div class="form-group">
+                <label th:for="nome">Nome:</label>
+                <label type="text" th:text="*{nome}">Nome do usuario</label><BR>
+
+                <label th:for="email">Endereço de email</label>
+                <label type="text" th:text="*{email}">email@email.com</label><BR>
+
+                <label th:for="dataNascimento">Data de nascimento:</label>
+                <label type="text" th:text="*{dataNascimento}">08/03/1975</label><BR>
+            </div>
+        </div>
+    </div>
+    <a type="button" class="btn btn-danger" href="/planningpoker/login">Login</a>
+</div>
+</body>
+</html>
